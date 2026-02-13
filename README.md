@@ -1,9 +1,7 @@
 # JaxCard - Credit Card Website
 
-<h1>PROJECT PREVIEW</h1>
 ![JaxCard Preview](./preview.gif)
 
-> **Regenerate:** Run `npm run generate-gif` to build your site and capture a fresh preview. Or pass a URL: `node scripts/generate-preview-gif.js https://your-url.com`
 <br>
 **LIVE PROJECT LINK:** [JaxCard - Live Demo](https://698f3a0bb9fc360ee0db9fe2--chimerical-choux-0d8870.netlify.app/) 
 
