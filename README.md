@@ -1,7 +1,7 @@
 # JaxCard - Credit Card Website
 
 <h1>PROJECT PREVIEW</h1>
-<img src="https://media.giphy.com/media/zUExl1rjVx8OTB4jS7/giphy.gif" alt="JaxCard Preview">
+![JaxCard Preview](https://media.giphy.com/media/zUExl1rjVx8OTB4jS7/giphy.gif)
 <br>
 **LIVE PROJECT LINK:** [JaxCard - Live Demo](https://698f3a0bb9fc360ee0db9fe2--chimerical-choux-0d8870.netlify.app/) 
 
