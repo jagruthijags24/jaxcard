@@ -1,0 +1,111 @@
+.heroSection {
+  min-height: 100vh;
+  padding: 4em 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--grey-900);
+  background: linear-gradient(135deg, var(--white) 0%, var(--grey-100) 50%, var(--blue-light) 100%);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.heroSection h1 {
+  font-size: 3rem;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.heroText {
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.heroTextEmphasis {
+  font-style: italic;
+  color: var(--grey-500);
+}
+
+.heroRight {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideInRight 1s ease-out 0.4s both;
+}
+
+.cardImage {
+  width: 80%;
+  transition: transform var(--transition);
+  animation: float 4s ease-in-out infinite;
+}
+
+.cardImage:hover {
+  transform: scale(1.05);
+  animation: none;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-top: 2em;
+  animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+
+.heroApplyBtn {
+  margin-top: 0;
+  padding: 0.6em 1.5em;
+  border-radius: 2em;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  background: var(--blue-primary);
+  color: white;
+  transition: all var(--transition);
+}
+
+.heroApplyBtn:hover {
+  background: var(--blue-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+}
+
+.learnMoreText {
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  cursor: pointer;
+  color: var(--grey-700);
+  transition: color var(--transition);
+}
+
+.learnMoreText:hover {
+  color: var(--blue-primary);
+}
+
+@media screen and (max-width: 950px) {
+  .heroSection {
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em 1em;
+    gap: 2em;
+  }
+
+  .heroSection h1 {
+    font-size: 2.25rem;
+    text-align: center;
+  }
+
+  .heroText {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .cardImage {
+    width: 100%;
+  }
+
+  .heroRight {
+    width: 100%;
+  }
+}

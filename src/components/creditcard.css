@@ -1,0 +1,73 @@
+.creditCardImage {
+  width: 22%;
+}
+
+.creditCard {
+  color: var(--grey-900);
+  padding: 2.5em 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.creditCardWrapper {
+  border-top: 2px solid var(--grey-300);
+  padding: 2em 0;
+  transition: border-color var(--transition);
+}
+
+.creditCardWrapper:hover {
+  border-color: var(--blue-light);
+}
+
+.creditCardBody {
+  display: flex;
+  align-items: flex-start;
+  gap: 3em;
+  padding: 2em 0;
+}
+
+.creditCardHeader {
+  color: var(--blue-primary);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.offerHeader, .glanceHeader, .aprHeader, .annualFeeHeader {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--grey-500);
+}
+
+.offerText, .glanceText, .aprText, .annualFeeText {
+  font-weight: 400;
+  color: var(--grey-600, #4b5563);
+}
+
+.creditCardApplyBtn {
+  margin-top: 0;
+  width: 90%;
+  font-size: 1rem;
+  padding: 1em;
+  border-radius: 0.5em;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background: var(--yellow-primary);
+  color: var(--grey-900);
+  transition: all var(--transition);
+}
+
+.creditCardApplyBtn:hover {
+  background: var(--yellow-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(251, 191, 36, 0.4);
+}
+
+@media screen and (max-width: 1400px) {
+  .creditCardBody { flex-direction: column; }
+  .creditCardImage { margin: 0 auto; width: 50%; }
+  .creditCardApplyBtn { width: 100%; }
+}

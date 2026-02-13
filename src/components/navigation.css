@@ -1,0 +1,137 @@
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 0.05rem;
+  transition: color var(--transition);
+}
+
+.mobileNav, .mobileNavActive {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: fixed;
+  left: -2000px;
+  top: 0;
+  width: 100%;
+  background: var(--white);
+  color: var(--grey-900);
+  text-align: center;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+.mobileNavActive {
+  left: 0;
+}
+
+.closeNavBtn, .openNavBtn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.fa-xmark {
+  font-size: 2rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.5em;
+  display: none;
+  color: var(--grey-500);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fa-credit-card {
+  font-size: 2.5rem;
+  color: var(--blue-primary);
+}
+
+.logoText {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+}
+
+.fa-bars {
+  display: none;
+  color: var(--grey-900);
+  font-size: 1.5rem;
+}
+
+.mobile-nav-links {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2rem;
+}
+
+.mobile-nav-links a:hover {
+  color: var(--blue-primary);
+}
+
+.applyBtn {
+  padding: 0.5em 1.25em;
+  border-radius: 2em;
+  font-size: 1.1rem;
+  font-weight: 800;
+  border: none;
+  margin-top: 2rem;
+  cursor: pointer;
+  background: var(--yellow-primary);
+  color: var(--grey-900);
+  transition: all var(--transition);
+}
+
+.applyBtn:hover {
+  background: var(--yellow-dark);
+  transform: scale(1.05);
+}
+
+.mainNav, .mainNavInactive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  color: var(--grey-900);
+  background: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all var(--transition);
+}
+
+.main-nav-links {
+  display: flex;
+  gap: 2em;
+  font-size: 1rem;
+  margin-inline: auto;
+}
+
+.main-nav-links a:hover {
+  color: var(--blue-primary);
+}
+
+.mainApplyBtn {
+  margin: 0;
+  padding: 0.5em 1.5em;
+}
+
+@media screen and (max-width: 1400px) {
+  .fa-bars { display: block; }
+  .fa-xmark { display: block; }
+  .main-nav-links, .mainApplyBtn { display: none; }
+}

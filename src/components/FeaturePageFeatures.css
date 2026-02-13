@@ -1,0 +1,15 @@
+.FeaturePageSection {
+  padding: 5em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  background: var(--grey-50);
+}
+
+.FeaturePageSectionHeader {
+  color: var(--grey-900);
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  font-size: 2rem;
+}

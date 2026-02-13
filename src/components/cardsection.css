@@ -1,0 +1,16 @@
+.mainFeatureSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8em;
+  padding: 5em 2em;
+  color: var(--grey-900);
+  text-align: center;
+  background: var(--white);
+}
+
+.mainFeatureHeaderText {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  animation: fadeInUp 0.8s ease-out;
+}

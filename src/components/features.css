@@ -1,0 +1,105 @@
+.features {
+  padding: 5em 3em;
+  background: linear-gradient(180deg, var(--grey-100) 0%, var(--white) 100%);
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 1.5em;
+  color: var(--grey-900);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4em;
+  transform: translateY(-100px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--grey-200, #e5e7eb);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.featuresHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
+  gap: 1em;
+}
+
+.featureHeaderText {
+  font-weight: 400;
+  color: var(--grey-600, #4b5563);
+}
+
+.features h2 {
+  font-size: 2.75rem;
+  letter-spacing: -0.02em;
+}
+
+.features h3 {
+  font-size: 1.5rem;
+}
+
+.features h2, .features h3 {
+  font-weight: 800;
+}
+
+.featuresGroup {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 28%;
+  min-width: 250px;
+  gap: 1em;
+  padding: 2em 1.5em;
+  border-radius: 1em;
+  background: var(--white);
+  border: 1px solid var(--grey-200, #e5e7eb);
+  transition: all var(--transition);
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.feature:nth-child(1) { animation-delay: 0.1s; }
+.feature:nth-child(2) { animation-delay: 0.2s; }
+.feature:nth-child(3) { animation-delay: 0.3s; }
+
+.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.15);
+  border-color: var(--blue-light);
+}
+
+.featureText {
+  font-weight: 400;
+  width: 100%;
+  line-height: 1.7;
+  color: var(--grey-600, #4b5563);
+}
+
+.fa-hourglass, .fa-building-columns, .fa-lock {
+  background: linear-gradient(135deg, var(--yellow-primary), var(--yellow-dark));
+  padding: 0.75em;
+  border-radius: 0.75em;
+  color: var(--grey-900);
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .features {
+    transform: translateY(-60px);
+    padding: 3em 2em;
+  }
+  .feature { width: 100%; max-width: 400px; margin: 0 auto; }
+  .featuresGroup { flex-direction: column; align-items: center; }
+}
+
+@media screen and (max-width: 1200px) {
+  .features { transform: translateY(50px); padding: 4em 1.5em; }
+  .featuresHeader { width: 100%; }
+}

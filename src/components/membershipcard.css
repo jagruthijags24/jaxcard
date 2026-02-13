@@ -1,0 +1,88 @@
+.membershipCardsSection {
+  padding: 5em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2em;
+  max-width: 95%;
+  margin: 0 auto;
+  background: linear-gradient(180deg, var(--grey-50) 0%, var(--white) 100%);
+}
+
+.membershipCard {
+  padding: 2.5em 1.5em;
+  color: var(--grey-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5em;
+  background: var(--white);
+  border-radius: 1.5em;
+  cursor: pointer;
+  border: 2px solid var(--grey-200, #e5e7eb);
+  transition: all var(--transition);
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.membershipCard:nth-child(1) { animation-delay: 0.1s; }
+.membershipCard:nth-child(2) { animation-delay: 0.2s; }
+.membershipCard:nth-child(3) { animation-delay: 0.3s; }
+
+.membershipCard:hover {
+  transform: translateY(-12px);
+  border-color: var(--blue-primary);
+  box-shadow: 0 20px 50px rgba(56, 189, 248, 0.15);
+}
+
+.membershipCardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.stars { max-width: 120px; }
+
+.membershipCardHeader { display: flex; align-items: center; gap: 0.75em; }
+
+.rating { font-size: 1.75rem; font-weight: 700; color: var(--grey-900); }
+
+.membershipCardTitle {
+  color: var(--grey-900);
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: var(--yellow-primary);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.35em;
+  letter-spacing: 0.1em;
+  font-size: 1.1rem;
+}
+
+.membershipapplyBtn {
+  width: 100%;
+  background: var(--blue-primary);
+  color: white;
+  font-weight: 700;
+  padding: 1em 1.5em;
+  border-radius: 0.5em;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.membershipapplyBtn:hover {
+  background: var(--blue-dark);
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 1400px) {
+  .membershipCardsSection {
+    flex-direction: column;
+    gap: 3em;
+    min-height: auto;
+    padding: 4em 1em;
+  }
+}
