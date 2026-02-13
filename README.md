@@ -1,28 +1,54 @@
+# JaxCard - Credit Card Website
+
 <h1>PROJECT PREVIEW</h1>
 <img src='https://media.giphy.com/media/zUExl1rjVx8OTB4jS7/giphy.gif'>
 <br>
-LIVE PROJECT LINK: <a href='https://blkcard.netlify.app'>JaxCard Credit Card Website</a>
+**LIVE PROJECT LINK:** [JaxCard - Live Demo](https://698f3a0bb9fc360ee0db9fe2--chimerical-choux-0d8870.netlify.app/) 
 
+**GitHub Repository:** [jagruthijags24/jaxcard](https://github.com/jagruthijags24/jaxcard)
 
 <h1>PURPOSE</h1>
-This is a Fully responsive Credit Card website made using React. This is the first actual website I'm building using React while utilizing the React knowledge I've learned thus far. Since I specialize in front end development, this site will only consist of front end and will not have a backend. 
+This is a fully responsive Credit Card website built using React. As a front-end developer, I created this project to apply React concepts including React Router, component-based architecture, and responsive design. The site features a clean UI with no backend—purely front-end.
+
+<h1>FEATURES</h1>
+- **AI Assistant** — Chatbot to answer questions about cards, memberships, and features
+<br>
+- **Animations** — Smooth fade-in, slide effects, and hover interactions
+<br>
+- **Light Peaceful Blue Theme** — White, blue, grey, and yellow color palette
+<br>
+- **Fully Responsive** — Works on mobile, tablet, and desktop
+
 <h1>HOW IT'S MADE</h1>
--React Router
+- React & React Router
 <br>
--Dribbble for inspiration (Satria Nayottama Capital Finance app Landing Page)
+- Vite for build tooling
 <br>
--FontAwesome for icons
+- FontAwesome for icons
+<br>
+- CSS animations and transitions
+<br>
+- Dribbble inspiration (Satria Nayottama Capital Finance app Landing Page)
+
 <h1>LESSONS LEARNED</h1>
--how to use data files to render card info
+- Using data files to render card info dynamically
 <br>
--how to use index as prop to create condition for even or odd items
+- Index as prop for conditional styling (even/odd layout)
 <br>
--add redirect file in public folder to fix netlify hosting issue
+- Redirect file in public folder for Netlify/SPA hosting
 <br>
--React Router uses Link tags instead of anchor tags. Import the { Link } from "react-router-dom"
-<h1>OPTIMIZATIONS</h1>
--could add sign-in functionality and user dashboard
+- React Router uses Link instead of anchor tags
 <br>
--could add application with input fields
+- CSS variables for consistent theming
+
+<h1>FUTURE OPTIMIZATIONS</h1>
+- Sign-in functionality and user dashboard
 <br>
--I would add apply now page with input fields and maybe randomly generate an approved or rejection alert
+- Apply now page with input fields
+<br>
+- Application approval/rejection flow
+<br>
+- Backend integration for form submissions
+
+---
+**Created by Jagruthi** | [GitHub](https://github.com/jagruthijags24)
