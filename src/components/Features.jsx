@@ -1,4 +1,7 @@
 import "./features.css"
+import "./card.css"
+import transactionImg from "../assets/images/transaction-history.jpg"
+import expenseImg from "../assets/images/expense-tracker.jpg"
 
 export default function Features() {
     return (
@@ -10,51 +13,36 @@ export default function Features() {
                     However, we have multiple types of secured transactions utilizing the newest technologies. 
                 </p>
             </div>
-            
 
-            <div className="featuresGroup">
-                <div className="feature">
-                    <div className="featureHeader">
-                        <i className="fa-solid fa-hourglass"></i>
-                        <h3>Transaction History</h3>
+            <div className="featuresTwoColumn">
+                <section className="cardFeature">
+                    <div className="cardFeatureLeft">
+                        <h3 className="cardFeatureHeaderText">Instant Balance Reflection</h3>
+                        <p className="cardFeatureText">
+                            Get your current balance as soon as a transaction is completed. 
+                            No more waiting for transactions to post before your actual balance is reflected.
+                        </p>
+                        <button className="featuresLearnBtn">Learn More</button>
                     </div>
-                    
-                    <p className="featureText">
-                        Your transaction history is never deleted as long as you're a Jax card holder. 
-                        Trace transactions as far back as you need to
-                    </p>
-                </div>
-
-                <div className="feature">
-                    <div className="featureHeader">
-                        <i className="fa-solid fa-building-columns"></i>
-                        <h3>Multiple Locations</h3>
+                    <div className="cardFeatureRight">
+                        <img className="cardImg" src={transactionImg} alt="App showing balance and transactions" />
                     </div>
-                    
-                    <p className="featureText">
-                        No matter where you are, we have a location near you. Travel with the peace of mind 
-                        knowing we've got you covered, alway
-                    </p>
-                </div>
+                </section>
 
-                <div className="feature">
-                    <div className="featureHeader">
-                        <i className="fa-solid fa-lock"></i>
-                        <h3>Secure Transactions</h3>
+                <section className="cardFeature cardFeatureReverse">
+                    <div className="cardFeatureLeft">
+                        <h3 className="cardFeatureHeaderText">Instant Transaction Tracker</h3>
+                        <p className="cardFeatureText">
+                            Access every transaction you've ever made as a JaxCard holder. 
+                            We never delete transaction history so you can have peace of mind and added security all the time.
+                        </p>
+                        <button className="featuresLearnBtn">Learn More</button>
                     </div>
-                    
-                    <p className="featureText">
-                        Experience the most secure way of banking with Jax card and enjoy our 
-                        fraud prevention program as a premium member
-                    </p>
-                </div>
-
+                    <div className="cardFeatureRight">
+                        <img className="cardImg" src={expenseImg} alt="Transaction history dashboard" />
+                    </div>
+                </section>
             </div>
-
-            
-        
         </section>
-        
-        
     )
 }

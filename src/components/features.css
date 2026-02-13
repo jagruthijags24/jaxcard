@@ -1,6 +1,6 @@
 .features {
   padding: 5em 3em;
-  background: linear-gradient(180deg, var(--grey-100) 0%, var(--white) 100%);
+  background: var(--white);
   width: 95%;
   margin: 0 auto;
   border-radius: 1.5em;
@@ -41,6 +41,32 @@
 
 .features h2, .features h3 {
   font-weight: 800;
+}
+
+.featuresTwoColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.featuresLearnBtn {
+  padding: 0.75em 2em;
+  border-radius: 0.5em;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background: var(--yellow-primary);
+  color: var(--grey-900);
+  transition: all var(--transition);
+}
+
+.featuresLearnBtn:hover {
+  background: var(--yellow-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(251, 191, 36, 0.4);
 }
 
 .featuresGroup {
